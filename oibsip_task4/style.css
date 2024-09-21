@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('cover.jpg') no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2647bd;
+    flex-direction: column;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 119, 182, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #5ce843;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #1c5318;
+}
+
+/* Toggle message visibility */
+.message {
+    margin: 15px 0;
+    color: #e63946;
+}
+
+.message.hidden {
+    display: none;
+}
+
+/* Secured Page Styling */
+#securedPage h2 {
+    color: #0077b6;
+}
+
+#securedPage p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Dynamic transitions */
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    opacity: 1;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media  (max-width:480px){
+    body{
+        padding: 1rem;
+    }
+    .container {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin:2rem;
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}

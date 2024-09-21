@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Registration Form -->
+    <div class="container fade-in" id="registerPage">
+      <h2>Register</h2>
+      <div class="form-group">
+        <label for="registerUsername">Username</label>
+        <input
+          type="text"
+          id="registerUsername"
+          placeholder="Enter your username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="registerPassword">Password</label>
+        <input
+          type="password"
+          id="registerPassword"
+          placeholder="Enter your password"
+        />
+      </div>
+      <button class="btn" onclick="register()">Register</button>
+      <p class="message hidden" id="registerMessage"></p>
+      <p>
+        Already have an account?
+        <a href="#" onclick="showLogin()">Login here</a>
+      </p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="container hidden" id="loginPage">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="loginUsername">Username</label>
+        <input
+          type="text"
+          id="loginUsername"
+          placeholder="Enter your username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter your password"
+        />
+      </div>
+      <button class="btn" onclick="login()">Login</button>
+      <p class="message hidden" id="loginMessage"></p>
+      <p>
+        Don't have an account?
+        <a href="#" onclick="showRegister()">Register here</a>
+      </p>
+    </div>
+
+    <!-- Secured Page -->
+    <div class="container hidden" id="securedPage">
+      <h2>Welcome!</h2>
+      <p id="welcomeMessage"></p>
+      <button class="btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  </body>
+</html>
