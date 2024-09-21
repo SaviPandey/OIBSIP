@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #141E30, #243B55);
+}
+
+.heading {
+    color: wheat;
+    padding-top: 1.5rem;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.container {
+    width: 100vw;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 42vw;
+    height: auto;
+    background: linear-gradient(145deg, #000000, #ffffff);
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+    }
+}
+
+.display {
+    background-color: rgba(135, 174, 226, 0.8);
+    height: 18vh;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    height: 50%;
+    padding: 1rem;
+    text-align: left;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.result {
+    height: 40%;
+    padding: 1rem;
+    text-align: right;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.buttons {
+    margin: 2rem;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.buttons-grid button {
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.buttons-grid button:hover {
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.buttons-grid button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+}
+
+.buttons-grid button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.operator {
+    background-color: rgba(153, 186, 228, 0.8);
+}
+
+.number {
+    background-color: rgba(214, 224, 238, 0.8);
+}
+
+.operator:hover {
+    background-color: rgba(133, 170, 218, 0.9);
+}
+
+.number:hover {
+    background-color: rgba(192, 207, 226, 0.9);
+}
+
+.Enter {
+    background-color: rgba(98, 147, 216, 0.8);
+    grid-column: span 2;
+}
+
+.Enter:hover {
+    background-color: rgba(77, 127, 196, 0.9);
+}
+
+.advanced {
+    background-color: rgba(172, 199, 232, 0.8);
+}
+
+.advanced:hover {
+    background-color: rgba(152, 180, 221, 0.9);
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 1340px) {
+    .heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .calculator {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 1rem;
+    }
+    .calculator {
+        width: 90vw;
+    }
+    .result {
+        padding-bottom: 1.8rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .buttons-grid button {
+        padding: 0.4rem;
+        font-size: 1.3rem;
+    }
+    .buttons {
+        margin: 1rem;
+    }
+    .result {
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
