@@ -5,7 +5,11 @@
 }
 
 body {
-    background: linear-gradient(135deg, #141E30, #243B55);
+    background: 
+        linear-gradient(135deg, rgba(37, 52, 79, 0.7), rgba(18, 41, 67, 0.7)),
+        url('space.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* background: linear-gradient(135deg, #141E30, #243B55); */
 }
 
 .heading {

@@ -19,17 +19,17 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
   background: 
         /* linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), Gradient overlay */
-        url('cover.jpg'); /* Background image */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the image */
+        url('cover.jpg');
+    background-size: cover; 
+    background-position: center; 
   border-radius: 10px;
 }
 
 /* Header styles */
 header {
   background-image: url('header.jpg'), linear-gradient(135deg, #4573a4, #2b5876); 
-  background-size: cover, cover; /* Ensures both background layers cover the header */
-  background-position: center; /* Centers the background image */
+  background-size: cover, cover;
+  background-position: center; 
   /* background: linear-gradient(135deg, #4573a4, #2b5876);  */
   color: white;
   padding: 30px 20px;
